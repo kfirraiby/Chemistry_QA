@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+langchain-community = "*"
+openai = "*"
+chromadb = "*"
+langchain-openai = "*"
+faiss-cpu = "*"
+pandas = "*"
+openpyxl = "*"
+transformers = "==4.20"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+accelerate = "*"
+bitsandbytes-cuda102 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
