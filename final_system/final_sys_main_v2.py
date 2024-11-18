@@ -69,7 +69,7 @@ def process_pdf(pdf_file):
             HumanMessage(content=f"question: {questions_dict[q]}, paper in chemistry: {sum_text}"),
         ]
 
-        chat = ChatOpenAI(openai_api_key="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",
+        chat = ChatOpenAI(openai_api_key="",
                           model_name='gpt-4-1106-preview',
                           temperature=0.0)
 

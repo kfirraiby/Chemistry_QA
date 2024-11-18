@@ -7,7 +7,7 @@ from utils import summerised_text, questions_dict, save_dict_to_csv, extract_pap
 import os
 import time
 papers_folder_name = 'test_papers'
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 folder_path = f"/Users/kfirraiby/Desktop/git/chemistry_QA/{papers_folder_name}"
 file_list = list_files_in_folder(folder_path)
 
@@ -52,7 +52,7 @@ for pdf in file_list:
 #             HumanMessage(content=f"question: {questions_dict_sec_round[q]}, paper in chemistry: {sum_text}"),
 #         ]
 #
-#         chat = ChatOpenAI(openai_api_key="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",
+#         chat = ChatOpenAI(openai_api_key="",
 #                           model_name='gpt-4o',
 #                           temperature=0.0)
 #

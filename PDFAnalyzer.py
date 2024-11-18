@@ -9,7 +9,7 @@ class PDFAnalyzer:
     def __init__(self, pdf_path, model):
         self.pdf_path = pdf_path
         self.documents = extract_paper_no_references(pdf_path)
-        self.open_api_key = "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"
+        self.open_api_key = ""
         self.model = model
 
     def full_text_method(self):

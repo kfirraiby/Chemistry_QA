@@ -62,7 +62,7 @@ def summerised_text(text):
         HumanMessage(content=f"questions: {questions_dict}, paper in chemistry: {text} "),
     ]
 
-    chat = ChatOpenAI(openai_api_key="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",
+    chat = ChatOpenAI(openai_api_key="",
                       model_name='gpt-4-1106-preview', temperature=0.0)
     result = chat.invoke(messages)
 

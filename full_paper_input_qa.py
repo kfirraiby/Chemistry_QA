@@ -5,7 +5,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 name_paper = 'AI paper new'
 file_path = files_paths_dict[name_paper]
@@ -36,7 +36,7 @@ for q in questions_dict_sec_round:
         HumanMessage(content=f"questions: {questions_dict[q]}, paper in chemistry: {input_text} "),
     ]
 
-    chat = ChatOpenAI(openai_api_key="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", model_name='gpt-4-1106'
+    chat = ChatOpenAI(openai_api_key="", model_name='gpt-4-1106'
                                                                                                        '-preview',temperature=0.0)
 
     result = chat.invoke(messages)

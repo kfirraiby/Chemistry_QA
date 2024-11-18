@@ -20,7 +20,7 @@ from utils import extract_paper_no_references
 
 from collections import defaultdict
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 folder_path = "/Users/kfirraiby/Desktop/git/chemistry_QA/test_papers"
 file_list = list_files_in_folder(folder_path)
